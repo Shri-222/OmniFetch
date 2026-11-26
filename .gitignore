@@ -1,0 +1,39 @@
+# Python & Virtual Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build & Release Artifacts
+build/
+dist/
+*.spec.bak
+*.lnk
+
+# Runtime State, Logs & Staging
+logs/
+*.log
+.staging/
+.agents/
+
+# Databases & Secrets
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+config.json
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+*.vault
+*.qvault

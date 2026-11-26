@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OmniFetch Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title">OmniFetch</div>
+    <div id="statusBadge" class="badge offline">Offline</div>
+  </div>
+
+  <div class="section">
+    <label for="tokenInput">Secret Handoff Token</label>
+    <div class="row">
+      <input type="password" id="tokenInput" placeholder="Paste X-OmniFetch-Token">
+      <button id="btnSaveToken">Save</button>
+      <button id="btnAutoPair" class="btn-secondary" title="Connect while pairing window is open in OmniFetch Settings">Auto-Pair</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <label class="switch-row">
+      <input type="checkbox" id="chkAutoIntercept">
+      <span>Auto-Intercept Downloads</span>
+    </label>
+    <div class="row sub-row" id="sizeThresholdRow">
+      <span>Min Size (MB, 0=all):</span>
+      <input type="number" id="numMinSize" value="0" min="0" max="10000">
+    </div>
+  </div>
+
+  <div class="section">
+    <label class="switch-row">
+      <input type="checkbox" id="chkMediaSniffer">
+      <span>Detect Media Streams on Tab (Opt-in)</span>
+    </label>
+    <div id="mediaSection" class="media-box hidden">
+      <div class="media-header">Detected Media on This Tab</div>
+      <div id="mediaList" class="media-list"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <label for="urlInput">Quick Download Link</label>
+    <div class="row">
+      <input type="text" id="urlInput" placeholder="Paste link or magnet:">
+      <button id="btnSendUrl">Send</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span id="msgLabel"></span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

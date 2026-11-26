@@ -31,7 +31,7 @@ OmniFetch is a high-speed, native Windows desktop download manager built with **
 ## Project Structure
 
 ```text
-C:\Users\shrey\Desktop\OmniFetch\
+C:\Users\Desktop\OmniFetch\
 ├── .agents/
 │   └── mcp_config.json                # MCP configuration (context7)
 ├── .venv/                             # Isolated Python 3.12 virtual environment

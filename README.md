@@ -71,6 +71,6 @@ C:\Users\shrey\Desktop\OmniFetch\
 To run the full automated verification test suite:
 
 ```powershell
-cd C:\Users\shrey\Desktop\OmniFetch
+cd File Path
 .venv\Scripts\python.exe -m pytest -v
 ```
